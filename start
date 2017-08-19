@@ -1,0 +1,6 @@
+#!/bin/bash
+cd src/MonederoBingo/discovery-service
+title='Discovery Service'
+echo -n -e "\033]0;$title\007"
+sh gradlew build -x test
+java -jar build/libs/discovery-service-0.0.1-SNAPSHOT.jar
